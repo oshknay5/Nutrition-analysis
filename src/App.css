@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* null */
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-size: 100%;
+  line-height: 1;
+  background-color:rgb(242,244,248) ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:0px 10px;
+}
+video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+h1, h2, p{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+}
+h2{
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 10px 40px;
+  color: rgb(147,93,84);
+}
+p{
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 5px;
+  color:rgb(147,93,84);
+}
+.header-par{
+  margin-bottom: 25px;
+  color: rgb(0, 0, 0);
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+textarea{
+  border: 1px solid rgb(227,227,228);
+  border-radius: 10px ;
+  background-color:   rgb(255,255,255);
+  padding: 10px;
+  color:rgb(147,93,84) ;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 25px;
 }
+.form-cta{
+  width: 50%;
+  background-color:  rgb(106,204,0);
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+.example{
+  color: rgb(106,204,0);
+}
+.block-res{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(106,204,0);
+  background-color: #fafcf9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.block-nutrition{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.calories{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.item-nutrition{
+  padding: 5px 40px;
+}
+ @media all and (max-width: 500px){
+  textarea{
+    width: 90%;
+  }
+ }
+  
+ 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
